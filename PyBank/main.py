@@ -68,4 +68,17 @@ print("Average Change: " + str(average_currency))
 print("Greatest Increase in Profits: " + str(increase_month) + " " + "(" + str(increase_currency) + ")")
 print("Greatest Decrease in Profits: " + str(decrease_month) + " " + "(" + str(decrease_currency) + ")")
 
+output_file = os.path.join("PyBank_summary.txt")
+
+with open(output_file, 'w') as f:
+    print("Financial Analysis", file=f)
+    print("------------------------------------------------", file=f)
+
+    print("Total months: " + str(int(num_rows)), file=f)
+    print("Total: " + str(total_currency), file=f)
+    print("Average Change: " + str(average_currency), file=f)
+    print("Greatest Increase in Profits: " + str(increase_month) + " " + "(" + str(increase_currency) + ")", file=f)
+    print("Greatest Decrease in Profits: " + str(decrease_month) + " " + "(" + str(decrease_currency) + ")", file=f)
+
+
 
