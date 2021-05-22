@@ -27,13 +27,16 @@ with open(budget_csv) as csv_file:
             previous_month = total_list[i]
 
     
-length = len(change_list)
-total = sum(change_list)
+# length = len(change_list)
+# total = sum(change_list)
 
-average = total / length
+# average = total / length
 
-print(average)
-print(total_list)
+# print(average)
+# print(change_list)
 
+greatest_increase = max(change_list)
+greatest_decrease = min(change_list)
 
-
+print(greatest_increase)
+print(greatest_decrease)
