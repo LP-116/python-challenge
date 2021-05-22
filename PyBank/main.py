@@ -46,10 +46,26 @@ for x in range(len(months_list)):
     if x == decrease_index:
         decrease_month = months_list[x+1]
 
-print(num_rows)
-print(total_profit)
-print(average)
-print(greatest_increase)
-print(greatest_decrease)
-print(increase_month)
-print(decrease_month)
+total_currency = "${:}".format(total_profit)
+average_currency = "${:.2f}".format(average)
+increase_currency = "${:}".format(greatest_increase)
+decrease_currency = "${:}".format(greatest_decrease)
+
+# print(num_rows)
+# print(total_profit)
+# print(average)
+# print(greatest_increase)
+# print(greatest_decrease)
+# print(increase_month)
+# print(decrease_month)
+
+print("Financial Analysis")
+print("------------------------------------------------")
+
+print("Total months: " + str(int(num_rows)))
+print("Total: " + str(total_currency))
+print("Average Change: " + str(average_currency))
+print("Greatest Increase in Profits: " + str(increase_month) + " " + "(" + str(increase_currency) + ")")
+print("Greatest Decrease in Profits: " + str(decrease_month) + " " + "(" + str(decrease_currency) + ")")
+
+
