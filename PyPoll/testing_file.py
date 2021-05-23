@@ -16,33 +16,30 @@ with open(election_csv) as csv_file:
 
     csv_header = next(csv_reader, None)
     
-    for row in csv_reader:
-        if row[2] not in candidate_list:
-            candidate_list.append(str(row[2]))
-    
-    # for row1 in csv_reader:
-    #     if row[2] == candidate_list[0]:
-    #         candidate1_votes += 1
-
-    #     if row[2] == candidate_list[1]:
-    #         candidate2_votes += 1
+    for row1 in csv_reader:
+        if row1[2] not in candidate_list:
+            candidate_list.append(str(row1[2]))
 
 with open(election_csv) as csv_file:
     csv_reader = csv.reader(csv_file)
 
     csv_header = next(csv_reader, None)
 
-    for row in csv_reader:
-        if row[2] == candidate_list[0]:
+    # for row in csv_reader:
+    #     if row[2] not in candidate_list:
+    #         candidate_list.append(str(row[2]))
+
+    for row1 in csv_reader:
+        if row1[2] == candidate_list[0]:
             candidate1_votes += 1
         
-        if row[2] == candidate_list[1]:
+        if row1[2] == candidate_list[1]:
             candidate2_votes += 1
 
-        if row[2] == candidate_list[2]:
+        if row1[2] == candidate_list[2]:
             candidate3_votes += 1
 
-        if row[2] == candidate_list[3]:
+        if row1[2] == candidate_list[3]:
             candidate4_votes += 1
     
     
@@ -51,23 +48,23 @@ print(candidate2_votes)
 print(candidate3_votes)
 print(candidate4_votes)
 
-all_votes = candidate1_votes + candidate2_votes + candidate3_votes + candidate4_votes
+# all_votes = candidate1_votes + candidate2_votes + candidate3_votes + candidate4_votes
 
-candidate1_percentage = (candidate1_votes / all_votes) * 100
+# candidate1_percentage = (candidate1_votes / all_votes) * 100
 
-print(candidate1_percentage)
+# print(candidate1_percentage)
 
-candidate2_percentage = (candidate2_votes / all_votes) * 100
+# candidate2_percentage = (candidate2_votes / all_votes) * 100
 
-print(candidate2_percentage)
+# print(candidate2_percentage)
 
-candidate3_percentage = (candidate3_votes / all_votes) * 100
+# candidate3_percentage = (candidate3_votes / all_votes) * 100
 
-print(candidate3_percentage)
+# print(candidate3_percentage)
 
-candidate4_percentage = (candidate4_votes / all_votes) * 100
+# candidate4_percentage = (candidate4_votes / all_votes) * 100
 
-print(candidate4_percentage)
+# print(candidate4_percentage)
 
 # print(all_votes)
 # print(Khan_votes)
