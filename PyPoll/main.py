@@ -15,13 +15,6 @@ with open(election_csv) as csv_file:
     csv_reader = csv.reader(csv_file)
 
     csv_header = next(csv_reader, None)
-    lines = len(list(csv_reader))
-
-
-with open(election_csv) as csv_file:
-    csv_reader = csv.reader(csv_file)
-
-    csv_header = next(csv_reader, None)
     
     for row in csv_reader:
         if row[2] not in candidate_list:
@@ -39,12 +32,29 @@ with open(election_csv) as csv_file:
         if row[2] == "O'Tooley":
             Otooley_votes += 1
 
- 
-print(Khan_votes)
-print(Correy_votes)
-print(Li_votes)
-print(Otooley_votes)
-print(lines)           
-print(candidate_list)
+all_votes = Khan_votes + Correy_votes + Li_votes + Otooley_votes
+
+Khan_percentage = (Khan_votes / all_votes) * 100
+
+print(Khan_percentage)
+
+Correy_percentage = (Correy_votes / all_votes) * 100
+
+print(Correy_percentage)
+
+Li_percentage = (Li_votes / all_votes) * 100
+
+print(Li_percentage)
+
+Otooley_percentage = (Otooley_votes / all_votes) * 100
+
+print(Otooley_percentage)
+
+# print(all_votes)
+# print(Khan_votes)
+# print(Correy_votes)
+# print(Li_votes)
+# print(Otooley_votes)  
+
 
 
