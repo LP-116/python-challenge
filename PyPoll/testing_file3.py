@@ -12,22 +12,22 @@ with open(election_csv) as csv_file:
     csv_header = next(csv_reader, None)
 
     for row in csv_reader:
-     
+
         candidate_name = row[2]
 
         if candidate_name not in candidate_list:
             candidate_list.append(str(candidate_name))
 
-            candidate_votes[candidate_name] = 0
-        
-        candidate_votes[candidate_name] = candidate_votes[candidate_name] + 1
-    
+        if candidate_name == candidate_list[0]:
+            candidate_votes[candidate_name] = candidate_votes[candidate_name] +1
+
+
 print(candidate_votes)
 
-all_votes = candidate_votes.values()
-total_votes = sum(all_votes)
+# all_votes = candidate_votes.values()
+# total_votes = sum(all_votes)
 
-print(total_votes)
+# print(total_votes)
 
 # for i in candidate_votes:
 #     votes = candidate_votes.get(i)
