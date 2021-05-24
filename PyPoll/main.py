@@ -35,7 +35,7 @@ with open(election_csv) as csv_file:
             Li_votes += 1
 
 
-all_votes = Khan_votes + Correy_votes + Li_votes + Otooley_votes
+all_votes = Correy_votes + Khan_votes + Otooley_votes + Li_votes
 
 Correy_percentage = "{:.3f}%".format((Correy_votes / all_votes) * 100)
 Khan_percentage = "{:.3f}%".format((Khan_votes / all_votes) * 100)
