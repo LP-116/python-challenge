@@ -35,11 +35,6 @@ for x in range(len(votes)):
 
 maximum = max(candidate_votes, key=candidate_votes.get)
 
-# print(name)
-# print(votes)
-# print(percentage_list)
-# print(maximum)
-
 print(" ")
 print("Election Results")
 print("------------------------------------------------")
