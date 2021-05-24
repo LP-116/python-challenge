@@ -10,6 +10,8 @@ Correy_votes = 0
 Li_votes = 0
 Otooley_votes = 0
 lines = 0
+percentage_list = []
+
 
 with open(election_csv) as csv_file:
     csv_reader = csv.reader(csv_file)
@@ -35,20 +37,13 @@ with open(election_csv) as csv_file:
 all_votes = Khan_votes + Correy_votes + Li_votes + Otooley_votes
 
 Khan_percentage = (Khan_votes / all_votes) * 100
-
-print(Khan_percentage)
-
 Correy_percentage = (Correy_votes / all_votes) * 100
-
-print(Correy_percentage)
-
 Li_percentage = (Li_votes / all_votes) * 100
-
-print(Li_percentage)
-
 Otooley_percentage = (Otooley_votes / all_votes) * 100
 
-print(Otooley_percentage)
+percentage_list = {"Khan": Khan_percentage, "Correy": Correy_percentage, "Li" : Li_percentage, "O'Tooley" : Otooley_percentage}
+
+print(percentage_list)
 
 # print(all_votes)
 # print(Khan_votes)

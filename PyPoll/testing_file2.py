@@ -20,18 +20,22 @@ with open(election_csv) as csv_file:
 
             candidate_votes[candidate_name] = 0
         
-        candidate_votes[candidate_name] = candidate_votes[candidate_name] + 1
+        candidate_votes[candidate_name] += candidate_votes[candidate_name]
     
-    for i in candidate_votes:
-        print(candidate_votes.get(i))
-        
 
-# print(candidate_votes)
+# print(f'{candidate_list[candidate_name]} + {candidate_votes[candidate_name]})
 
-# all_votes = candidate_votes.values()
-# total_votes = sum(all_votes)
+print(candidate_votes)
 
-# print(total_votes)
+all_votes = candidate_votes.values()
+total_votes = sum(all_votes)
+
+print(total_votes)
+
+# for i in candidate_votes:
+#     votes = candidate_votes.get(i)
+
+# print(votes)
 
 
 
