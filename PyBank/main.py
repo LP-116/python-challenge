@@ -1,8 +1,8 @@
-# setting up the script so that it runs in both mac and windows and reads csv files
+# setting up the script so that it runs in all operating systems and reads csv files
 import os
 import csv
 
-# csv file location
+# setting the csv path location
 budget_csv = os.path.join("Resources","budget_data.csv")
 
 # variables that will be used through the script

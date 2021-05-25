@@ -2,7 +2,7 @@
 import os
 import csv
 
-# csv file location
+# setting the csv path location
 election_csv = os.path.join("Resources","election_data.csv")
 
 # lists and dictionaries that will be used in the script
@@ -20,11 +20,11 @@ with open(election_csv) as csv_file:
 
     csv_header = next(csv_reader, None)
 
-# defining what information we will be reading in the csv file. We will be looking at each row in column 3.
+# First we define what information we will be reading in the csv file. We will be looking at each row in column 3.
 # We are now going through each row and determining the unqiue candidates in the column.
 # Each time a candidate name appears in the column that has not been seen before, it adds it to a list called 'candidate_list'
-# Once a new candidate has been identified an inital vote is placed against their name.
-# When a candidate in the list has been identified, the votes get added to their name as an ongoing sum.
+# Once a new candidate has been identified a dictionary is also created an inital vote is placed against their name.
+# When a candidate in the list has been identified, the votes get added to their name in the dictionary as an ongoing sum.
 
     for row in csv_reader:
      
