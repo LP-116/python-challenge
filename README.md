@@ -32,7 +32,7 @@ The results need to be printed to the terminal and a text file with the results 
 
 ### Method
 
-## PyBank
+### PyBank
 The Python script starts by importing the csv file and setting up the code so that we can analyse the data from the csv file. 
 
 The first calculations in the script look at each row in the budget file and adds up the number of rows in the file and sums the profit. Two lists are then created – a list that stores all the totals from the file and list that stores the months in the dataset.
@@ -48,7 +48,7 @@ The final results are printed to the terminal and a text file displaying the res
 
 Note: For further explanation on the method used, please refer to the comments in the code.
 
-## PyPoll
+### PyPoll
 The Python script starts by importing the csv file and setting up the code so that we can analyse the data from the csv file. 
 
 The first calculations in the script determines the unique candidates in the data and creates a list to store these names. The script also creates a dictionary to that stores the candidates name and the number of votes each candidate gets.
@@ -71,18 +71,18 @@ Note: For further explanation on the method used, please refer to the comments i
 ### Results
 The Python scripts will print the below to the terminal and to a text file.
 
-## PyBank
-### Terminal
+### PyBank
+#### Terminal
 ![PyBank terminal print](https://user-images.githubusercontent.com/82348616/119446973-92b21d80-bd72-11eb-9438-de3d1fd4acb0.PNG)
 
-### Text file
+#### Text file
 ![PyBank text print](https://user-images.githubusercontent.com/82348616/119446993-9a71c200-bd72-11eb-98b4-5e2b37938a06.PNG)
 
-## PyPoll
-### Terminal
+### PyPoll
+#### Terminal
 ![PyPoll terminal print](https://user-images.githubusercontent.com/82348616/119447024-a3629380-bd72-11eb-93da-555ec11d45ac.PNG)
 
-### Text file
+#### Text file
 ![PyPoll text print](https://user-images.githubusercontent.com/82348616/119447037-a8bfde00-bd72-11eb-9018-a9681fef631f.PNG)
 
 ### Files
