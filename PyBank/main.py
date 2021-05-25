@@ -1,11 +1,11 @@
-# setting up the script so that it runs in all operating systems and reads csv files
+# Setting up the script so that it runs in all operating systems and reads csv files
 import os
 import csv
 
-# setting the csv path location
+# Setting the csv path location
 budget_csv = os.path.join("Resources","budget_data.csv")
 
-# variables that will be used through the script
+# Variables that will be used through the script
 num_rows = 0
 total_profit = 0
 total_list = []
@@ -14,7 +14,7 @@ previous_month = 0
 change_calc = 0
 change_list = []
 
-# opening the csv file and then skipping the first row in the file so that our headers aren't included in the calculations.
+# Opening the csv file and then skipping the first row in the file so that our headers aren't included in the calculations.
 with open(budget_csv) as csv_file:
     csv_reader = csv.reader(csv_file)
 
@@ -80,7 +80,7 @@ print("  ")
 print("Financial Analysis")
 print("------------------------------------------------")
 
-print("Total months: " + str(int(num_rows)))
+print("Total Months: " + str(int(num_rows)))
 print("Total: " + str(total_currency))
 print("Average Change: " + str(average_currency))
 print("Greatest Increase in Profits: " + str(increase_month) + " " + "(" + str(increase_currency) + ")")
@@ -94,7 +94,7 @@ with open(output_file, 'w') as f:
     print("Financial Analysis", file=f)
     print("------------------------------------------------", file=f)
 
-    print("Total months: " + str(int(num_rows)), file=f)
+    print("Total Months: " + str(int(num_rows)), file=f)
     print("Total: " + str(total_currency), file=f)
     print("Average Change: " + str(average_currency), file=f)
     print("Greatest Increase in Profits: " + str(increase_month) + " " + "(" + str(increase_currency) + ")", file=f)

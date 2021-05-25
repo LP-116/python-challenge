@@ -1,11 +1,11 @@
-# setting up the script so that it runs in all operating systems and reads csv files
+# Setting up the script so that it runs in all operating systems and reads csv files
 import os
 import csv
 
-# setting the csv path location
+# Setting the csv path location
 election_csv = os.path.join("Resources","election_data.csv")
 
-# lists and dictionaries that will be used in the script
+# Lists and dictionaries that will be used in the script
 candidate_list = []
 candidate_votes = {}
 percentage_list = []
