@@ -72,17 +72,17 @@ Note: For further explanation on the method used, please refer to the comments i
 The Python scripts will print the below to the terminal and to a text file.
 
 ## PyBank
-# Terminal
+### Terminal
 ![PyBank terminal print](https://user-images.githubusercontent.com/82348616/119446973-92b21d80-bd72-11eb-9438-de3d1fd4acb0.PNG)
 
-# Text file
+### Text file
 ![PyBank text print](https://user-images.githubusercontent.com/82348616/119446993-9a71c200-bd72-11eb-98b4-5e2b37938a06.PNG)
 
 ## PyPoll
-# Terminal
+### Terminal
 ![PyPoll terminal print](https://user-images.githubusercontent.com/82348616/119447024-a3629380-bd72-11eb-93da-555ec11d45ac.PNG)
 
-# Text file
+### Text file
 ![PyPoll text print](https://user-images.githubusercontent.com/82348616/119447037-a8bfde00-bd72-11eb-9018-a9681fef631f.PNG)
 
 ### Files
