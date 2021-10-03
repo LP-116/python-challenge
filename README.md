@@ -1,8 +1,8 @@
 # Python Challenge
-## Python Homework - Py Me Up, Charlie!
+## Py Me Up, Charlie!
 
 ### Task
-There are two challenges in this homework task - PyBank and PyPoll.
+There are two challenges in this task - PyBank and PyPoll.
 
 In the PyBank challenge we are required to analyse the financial records of a company using a Python script. 
 We are provided with a budget_data.csv file which contains two columns: _Date_ and _Profit/Losses_
